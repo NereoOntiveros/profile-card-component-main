@@ -1,2 +1,120 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*Reset*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;  
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{    
+    height: 100%;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-position-x: 125%, -20%;
+    background-position-y: 200%, -95%;
+    background-repeat: no-repeat;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 400px;
+    width: 320px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    
+}
+.card-header{
+    background-image: url(/images/bg-pattern-card.svg);
+    background-size:cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 35%;
+}
+.card > img{
+    border-radius: 50%;
+    border: 7px solid #fff;
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: 100px;
+    margin-top: -55px;
+    
+    position: absolute;       
+    background-color: white;  
+}
+
+
+.profile-details{
+    background-color: white;
+    height: 40%;    
+}
+
+.profile-details div{
+    padding-top: 25%;
+}
+.profile-details P{    
+    text-align: center;
+}
+
+span{
+    font-weight: 700;
+    color: black;
+}
+#city{
+    padding-top: 3%;
+    font-size: smaller;
+}
+
+
+.card-footer{
+    border-top: 1px solid lightgray;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 25%;
+    display: flex;
+}
+.footer-item{
+    
+    width: 35%;
+}
+.footer-stats{
+    padding-top: 20%;
+}
+.footer-stats p{
+    text-align: center;
+    padding-top: 10%;
+}
+
+.extraSmall{
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+
+@media screen and (min-width:1400px){
+    .container{
+        background-position-x: -50%, 150%; 
+        background-position-y: 250%, -200%;
+    }
+    
+}
+
+
+
 .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); }
